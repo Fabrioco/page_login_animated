@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, #120c56, #000) no-repeat fixed;
+  overflow: hidden;
+}
+
+.stars {
+  background-position: 50px;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 1px 884px #fff, 733px 817px #fff, 319px 1064px white,
+    838px 1393px white, 150px 1252px white, 865px 209px white,
+    919px 1257px white, 57px 373px white, 1442px 683px white, 606px 932px white,
+    442px 907px white, 333px 877px white, 33px 907px white, 1253px 1090px white,
+    1105px 649px white, 1344px 478px white, 1168px 1607px white,
+    925px 824px white, 1296px 229px white, 388px 1194px white, 755px 211px white,
+    1427px 234px white, 1236px 441px white, 1280px 607px white,
+    376px 1072px white, 202px 333px white, 134px 915px white, 1500px 829px white,
+    1288px 1061px white, 413px 1410px white, 998px 381px white,
+    1433px 1211px white, 367px 1055px white, 785px 1201px white,
+    715px 960px white, 1499px 354px white, 129px 318px white, 265px 1110px white,
+    1043px 259px white, 917px 1395px white, 1268px 254px white,
+    193px 1445px white, 183px 1031px white, 502px 179px white, 663px 206px white,
+    585px 794px white, 1325px 510px white, 1092px 189px white,
+    1090px 625px white, 776px 477px white, 204px 732px #fff, 723px 1019px #fff,
+    1193px 294px white, 897px 1322px white, 150px 889px white, 858px 417px white,
+    1227px 394px white, 219px 72px white, 507px 645px white, 592px 79px white,
+    1249px 115px white, 894px 640px white, 300px 1201px white,
+    1319px 1154px white, 650px 498px white, 741px 870px white, 76px 1365px white,
+    692px 312px white, 472px 624px white, 1375px 196px white,
+    1103px 1006px white, 742px 190px white, 153px 176px white, 971px 689px white,
+    660px 283px white, 193px 738px white, 1022px 362px white, 598px 683px white,
+    571px 1417px white, 1118px 947px white, 894px 582px white,
+    723px 1328px white, 1052px 777px white, 542px 1412px white,
+    919px 1271px white, 856px 471px white, 666px 1064px white, 209px 950px white,
+    717px 195px white, 783px 820px white, 899px 784px white, 575px 305px white,
+    1187px 212px white, 586px 698px white, 208px 389px white, 274px 553px white,
+    831px 430px white, 1337px 1278px white, 1065px 498px white,
+    940px 207px white, 855px 145px white, 1500px 1049px white, 200px 683px white,
+    1288px 1336px white, 1414px 388px white, 921px 1214px white,
+    698px 291px white, 271px 1222px white, 668px 830px white, 1348px 108px white,
+    760px 651px white, 1500px 1177px white, 468px 192px white,
+    1104px 1412px white, 1404px 1301px white, 1026px 1302px white,
+    149px 622px white, 923px 1308px white, 218px 777px white, 985px 1087px white,
+    1694px 1514px #fff, 1792px 102px #fff, 278px 1012px white,
+    1994px 1749px white, 150px 1910px white, 183px 1226px white,
+    1944px 1828px white, 1152px 1093px white, 1014px 1395px white,
+    1885px 1923px white, 1246px 1204px white, 1337px 1498px white,
+    1332px 1902px white, 1267px 1606px white, 738px 1779px white,
+    1975px 986px white, 1988px 1475px white, 1224px 1244px white,
+    1203px 1061px white, 978px 1455px white, 1675px 1687px white,
+    1545px 1346px white, 1065px 1483px white, 1624px 1564px white,
+    151px 1943px white, 1484px 1351px white, 1940px 1412px white,
+    482px 1229px white, 1473px 1552px white, 1272px 1748px white,
+    329px 1734px white, 1021px 1516px white, 862px 1772px white,
+    1744px 1591px white, 1314px 1031px white, 1305px 1011px white,
+    1090px 1114px white, 2000px 1322px white, 1998px 1334px white,
+    1048px 1315px white, 1931px 1157px white, 808px 1616px white,
+    1825px 1437px white, 1316px 1230px white, 1076px 1631px white;
+  animation: animstars 10s linear infinite;
+}
+
+@keyframes animstars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-150px);
+  }
+}
+
+.comet svg {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-right: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: linear-gradient(45deg, #ff0000, #ff4800, #ff5e00, #ffb700);
+  color: #ff0000;
+  width: 50px;
+  background: linear-gradient(90deg);
+  animation: rotateComet 5s linear infinite;
+}
+
+@keyframes rotateComet {
+  from {
+    transform: translateX(80vw);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(80%, 450px);
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  min-height: 400px;
+  border-radius: 50px;
+  background-color: #50b9ff13;
+}
+
+h1 {
+  color: #ffcbdb;
+  margin-bottom: 50px;
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.inpts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+label {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+input {
+  padding: 5px 10px;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #ffcbdb;
+}
+
+input:focus {
+  border-bottom-color: #00ffee;
+  transition: 0.3s linear;
+}
+
+.div__inpt {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+
+.div__inpt svg {
+  color: #fff;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  align-self: flex-start;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button:active {
+  background-color: #ffcbdb;
+  box-shadow: 0 0 4px 0 #fff;
+}
+
+.content_links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+span svg {
+  width: auto;
+  margin: auto 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+a {
+  color: #fff;
+  width: auto;
+  margin: 0 auto;
+  text-decoration: none;
+  transition: 0.3s linear;
+  margin-top: 5px;
+}
+
+a:hover {
+  color: #ffcbdb;
+}
