@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { FaEye, FaEyeSlash, FaInfoCircle, FaCircle } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaInfoCircle } from "react-icons/fa";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -10,9 +10,6 @@ function App() {
   return (
     <body>
       <div className="stars"></div>
-      <div className="comet">
-        <FaCircle />
-      </div>
       <div className="container">
         <h1>Login</h1>
         <form className="container_form">
